@@ -1,0 +1,18 @@
+Add new reservation
+curl --location --request POST 'localhost:8080/reservations' \
+--header 'Content-Type: application/json' \
+--data-raw '{"reservedFrom":"2000-02-01 12:00",
+"reservedTo":"2000-02-02 13:00",
+"tenantId":1,
+"propertyId":1
+}'
+
+Get all reservations
+curl --location --request GET 'localhost:8080/reservations'
+
+
+Get all reservations of tenant
+curl --location --request GET 'localhost:8080/reservations/tenant/1'
+
+Get all reservations of property
+curl --location --request GET 'localhost:8080/reservations/property/1'

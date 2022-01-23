@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="204bccc8-7905-4abe-9297-599a6d4b6496" name="HSQLDB (Local) Mapping">
+      <data-sources db="1afcfb55-d423-4934-853e-1f017ebcb434" ddl="9e8808eb-3752-4264-a247-3735ac2f020d" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
