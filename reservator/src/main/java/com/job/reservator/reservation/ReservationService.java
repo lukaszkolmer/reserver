@@ -54,13 +54,11 @@ public class ReservationService {
     }
 
     public List<Reservation> getAllReservationForProperty(Long id) {
-        Property property = propertyService.getPropertyOfId(id);
-        return reservationRepository.findAllByProperty(property);
+        return reservationRepository.findAllByPropertyId(id);
     }
 
     public List<Reservation> getAllReservationsOfTenant(Long id) {
-        Tenant tenant = tenantService.getTenantOfId(id);
-        return reservationRepository.findAllByTenant(tenant);
+        return reservationRepository.findAllByTenantId(id);
     }
 
     public boolean isDateValid(NewReservationDto newReservationDto) {

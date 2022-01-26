@@ -10,9 +10,9 @@ import java.util.List;
 @Repository
 public interface ReservationRepository extends JpaRepository<Reservation, Long> {
 
-    List<Reservation> findAllByProperty(Property property);
+    List<Reservation> findAllByPropertyId(Long id);
 
-    List<Reservation> findAllByTenant(Tenant tenant);
+    List<Reservation> findAllByTenantId(Long id);
 
 
 }
